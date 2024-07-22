@@ -20,6 +20,7 @@ services:
     links:
       - db
 
+
   wpcli:
     image: wordpress:6.5.2-php8.3
     volumes:
