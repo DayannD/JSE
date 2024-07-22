@@ -21,7 +21,7 @@ services:
       - db
 
   wpcli:
-    image: wordpress:cli
+    image: wordpress:6.5.2-php8.3
     volumes:
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./wp:/var/www/html
@@ -51,14 +51,9 @@ services:
     image: mysql:latest # https://hub.docker.com/_/mysql/ - or mariadb https://hub.docker.com/_/mariadb
     ports:
       - 127.0.0.1:3307:3306 # change ip if required
-    command: [
-        '--default_authentication_plugin=mysql_native_password',
-        '--character-set-server=utf8mb4',
-        '--collation-server=utf8mb4_unicode_ci'
-    ]
     volumes:
       - ./wp-data:/docker-entrypoint-initdb.d
-      - db_data:/var/lib/mysql
+      - ./data/mysql/db_data:/var/lib/mysql
     environment:
       MYSQL_DATABASE: bddwp
       MYSQL_ROOT_PASSWORD: root

@@ -679,3 +679,7 @@ Stack trace:
 [22-Jan-2023 23:05:06 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
 [22-Jan-2023 23:05:08 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
 [22-Jan-2023 23:05:08 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
+[17-Jun-2024 17:22:15 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
+[17-Jun-2024 17:22:20 UTC] PHP Warning:  Creating default object from empty value in /var/www/html/wp-content/plugins/ocean-extra/includes/freemius/start.php on line 74
+[17-Jun-2024 17:22:49 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
+[17-Jun-2024 17:24:24 UTC] PHP Notice:  Undefined index: hostname in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 98
